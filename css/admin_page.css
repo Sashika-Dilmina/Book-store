@@ -1,0 +1,355 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f8f5f0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(139, 69, 19, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(160, 82, 45, 0.05) 0%, transparent 50%);
+    color: #3a2f2a;
+    line-height: 1.6;
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #2c1810;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(44, 24, 16, 0.1);
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #8b4513, #d2691e);
+    border-radius: 2px;
+}
+
+/* Box Container */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Individual Box Styles */
+.box {
+    background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 
+        0 8px 25px rgba(139, 69, 19, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(139, 69, 19, 0.2);
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box::after {
+    content: '📚';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.box:hover::before {
+    opacity: 1;
+}
+
+.box:hover::after {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 35px rgba(139, 69, 19, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Different book-themed colors and icons for each box */
+.box:nth-child(1) {
+    background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+}
+
+.box:nth-child(1)::after {
+    content: '📖';
+}
+
+.box:nth-child(2) {
+    background: linear-gradient(135deg, #654321 0%, #8b4513 100%);
+}
+
+.box:nth-child(2)::after {
+    content: '📚';
+}
+
+.box:nth-child(3) {
+    background: linear-gradient(135deg, #2f4f2f 0%, #556b2f 100%);
+}
+
+.box:nth-child(3)::after {
+    content: '📝';
+}
+
+.box:nth-child(4) {
+    background: linear-gradient(135deg, #483d8b 0%, #663399 100%);
+}
+
+.box:nth-child(4)::after {
+    content: '📓';
+}
+
+.box:nth-child(5) {
+    background: linear-gradient(135deg, #b22222 0%, #dc143c 100%);
+}
+
+.box:nth-child(5)::after {
+    content: '📕';
+}
+
+.box:nth-child(6) {
+    background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
+}
+
+.box:nth-child(6)::after {
+    content: '📗';
+}
+
+.box:nth-child(7) {
+    background: linear-gradient(135deg, #4682b4 0%, #5f9ea0 100%);
+}
+
+.box:nth-child(7)::after {
+    content: '📘';
+}
+
+.box:nth-child(8) {
+    background: linear-gradient(135deg, #800080 0%, #9932cc 100%);
+}
+
+.box:nth-child(8)::after {
+    content: '📙';
+}
+
+/* Box Content */
+.box h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Georgia', serif;
+}
+
+.box p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: 0.9;
+    font-family: 'Georgia', serif;
+}
+
+/* Bookstore-specific elements */
+.dashboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8b4513, #daa520, #654321, #8b4513);
+    z-index: 1;
+}
+
+/* Add book spine effect */
+.box {
+    background-image: 
+        linear-gradient(135deg, transparent 0%, transparent 85%, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0.1) 100%),
+        linear-gradient(45deg, transparent 0%, transparent 5%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .box {
+        padding: 1.5rem;
+    }
+    
+    .box h3 {
+        font-size: 2rem;
+    }
+    
+    .box p {
+        font-size: 1rem;
+    }
+    
+    .box::after {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .box {
+        padding: 1.2rem;
+    }
+    
+    .box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Additional Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+/* Animation for loading effect - like books being placed on shelf */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotateX(10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+.box {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.box:nth-child(1) { animation-delay: 0.1s; }
+.box:nth-child(2) { animation-delay: 0.2s; }
+.box:nth-child(3) { animation-delay: 0.3s; }
+.box:nth-child(4) { animation-delay: 0.4s; }
+.box:nth-child(5) { animation-delay: 0.5s; }
+.box:nth-child(6) { animation-delay: 0.6s; }
+.box:nth-child(7) { animation-delay: 0.7s; }
+.box:nth-child(8) { animation-delay: 0.8s; }
+
+/* Bookshelf effect for title */
+@keyframes titleGlow {
+    0%, 100% { text-shadow: 2px 2px 4px rgba(44, 24, 16, 0.1); }
+    50% { text-shadow: 2px 2px 8px rgba(44, 24, 16, 0.2); }
+}
+
+.title {
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+/* Print Styles */
+@media print {
+    .box {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: 2px solid #8b4513;
+    }
+    
+    .box:hover {
+        transform: none !important;
+    }
+    
+    .box::after {
+        color: #8b4513 !important;
+    }
+    
+    body {
+        background: white !important;
+    }
+}
+
+/* Additional bookstore theming */
+.box {
+    position: relative;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 12px 0 0 12px;
+}
+
+/* Hover effect for book opening */
+.box:hover {
+    transform: translateY(-5px) perspective(1000px) rotateY(-2deg);
+}

@@ -1,3 +1,9 @@
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Your custom CSS -->
+<link rel="stylesheet" href="./css/admin_header.css">
+
 <?php
 if(isset($message)){
    foreach($message as $message){
