@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./css/admin_contacts.css">
+
 <?php
 
 include 'config.php';
