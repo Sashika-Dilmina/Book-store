@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="./css/admin_orders.css">
+
+
 <?php
 
 include 'config.php';

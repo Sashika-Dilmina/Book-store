@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./css/admin_products.css">
+
 <?php
 
 include 'config.php';
