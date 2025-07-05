@@ -1,0 +1,468 @@
+/* Book Store Admin Products CSS */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2691E;
+    --accent-color: #CD853F;
+    --dark-brown: #5D4037;
+    --light-cream: #FFF8DC;
+    --off-white: #FAF7F0;
+    --gold: #DAA520;
+    --dark-gold: #B8860B;
+    --shadow: rgba(139, 69, 19, 0.2);
+    --light-shadow: rgba(139, 69, 19, 0.1);
+    --text-dark: #3E2723;
+    --text-light: #6D4C41;
+    --danger: #C62828;
+    --success: #388E3C;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--light-cream) 100%);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+/* Add Products Section */
+.add-products {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 32px var(--shadow);
+    border: 1px solid var(--accent-color);
+}
+
+.add-products .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.add-products .title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+    border-radius: 2px;
+}
+
+.add-products form {
+    background: var(--off-white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--accent-color);
+    margin-top: 2rem;
+}
+
+.add-products form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-brown);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.add-products .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background: white;
+    color: var(--text-dark);
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.add-products .box:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--light-shadow);
+    transform: translateY(-2px);
+}
+
+.add-products .box::placeholder {
+    color: var(--text-light);
+    text-transform: capitalize;
+}
+
+.add-products .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.add-products .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+/* Show Products Section */
+.show-products {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.show-products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.show-products .box {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px var(--shadow);
+    border: 1px solid var(--accent-color);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.show-products .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+}
+
+.show-products .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px var(--shadow);
+}
+
+.show-products .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.show-products .box:hover img {
+    transform: scale(1.05);
+}
+
+.show-products .box .name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-brown);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.show-products .box .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.show-products .option-btn,
+.show-products .delete-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: 2px solid;
+    font-size: 0.9rem;
+}
+
+.show-products .option-btn {
+    background: var(--gold);
+    color: white;
+    border-color: var(--gold);
+}
+
+.show-products .option-btn:hover {
+    background: var(--dark-gold);
+    border-color: var(--dark-gold);
+    transform: translateY(-2px);
+}
+
+.show-products .delete-btn {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+}
+
+.show-products .delete-btn:hover {
+    background: #B71C1C;
+    border-color: #B71C1C;
+    transform: translateY(-2px);
+}
+
+.show-products .empty {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--off-white);
+    border-radius: var(--border-radius);
+    border: 2px dashed var(--accent-color);
+}
+
+/* Edit Product Form */
+.edit-product-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.edit-product-form form {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid var(--primary-color);
+}
+
+.edit-product-form form img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+}
+
+.edit-product-form .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background: var(--off-white);
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.edit-product-form .box:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--light-shadow);
+}
+
+.edit-product-form .btn {
+    width: 48%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, var(--success), #2E7D32);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 4%;
+}
+
+.edit-product-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(56, 142, 60, 0.4);
+}
+
+.edit-product-form .option-btn {
+    width: 48%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: var(--text-light);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.edit-product-form .option-btn:hover {
+    background: var(--text-dark);
+    transform: translateY(-2px);
+}
+
+/* Message Styles */
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    background: var(--success);
+    color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(56, 142, 60, 0.4);
+    z-index: 1001;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-products,
+    .show-products {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .add-products .title {
+        font-size: 2rem;
+    }
+    
+    .show-products .box-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .edit-product-form {
+        padding: 1rem;
+    }
+    
+    .edit-product-form .btn,
+    .edit-product-form .option-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-products .title {
+        font-size: 1.5rem;
+    }
+    
+    .show-products .box {
+        padding: 1rem;
+    }
+    
+    .show-products .box img {
+        height: 150px;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Book-specific enhancements */
+.book-spine {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    height: 4px;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+.vintage-border {
+    border: 2px solid var(--accent-color);
+    border-image: linear-gradient(45deg, var(--gold), var(--dark-gold)) 1;
+}
