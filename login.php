@@ -70,7 +70,7 @@ if(isset($message)){
 
 <div class="form-container">
 <div class="brand-name">
-    <h2>Bookly</h2>
+    <h2>PAGETuner</h2>
     <p>Book-Store</p>
 </div>
    <form action="" method="post">
