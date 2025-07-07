@@ -82,7 +82,7 @@ body {
 }
 
 .about .content p {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     margin-bottom: 1.5rem;
     color: #555;
 }
@@ -166,7 +166,7 @@ body {
 }
 
 .reviews .box p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #555;
     margin-bottom: 1rem;
     font-style: italic;
@@ -231,6 +231,7 @@ body {
 }
 
 .authors .box .share a {
+    font-size: 1.5rem;
     display: inline-block;
     width: 40px;
     height: 40px;
