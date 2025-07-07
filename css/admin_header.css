@@ -1,133 +1,183 @@
-/* Message styling */
+/* Admin Header CSS - Matching Purple Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Message Styles */
 .message {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 10px 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: slideIn 0.3s ease;
+    max-width: 300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-.message.success {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    color: #155724;
-}
-
-.message.error {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    color: #721c24;
+.message span {
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .message i {
     cursor: pointer;
-    color: #6c757d;
-    font-size: 14px;
-    padding: 5px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
 }
 
 .message i:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
 }
 
-/* Header styling */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0 20px;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 .header .flex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0 2rem;
+    position: relative;
 }
 
-/* Logo styling */
-.logo {
-    font-size: 1.8rem;
+/* Logo Styles */
+.header .logo {
+    font-size: 2rem;
     font-weight: bold;
-    color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    color: #8B5CF6;
+    transition: all 0.3s ease;
 }
 
-.logo span {
-    color: #ffd700;
+.header .logo span {
+    color: #A78BFA;
 }
 
-.logo:hover {
-    color: #ffd700;
+.header .logo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
 }
 
-/* Navigation styling */
+/* Navbar Styles */
 .navbar {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .navbar a {
-    color: white;
+    color: #6B7280;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: all 0.3s;
-    text-transform: capitalize;
     font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #8B5CF6, #A78BFA);
+    transition: width 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    color: #8B5CF6;
+    background: rgba(139, 92, 246, 0.1);
 }
 
-/* Icons styling */
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Icons Styles */
 .icons {
     display: flex;
     gap: 1rem;
     align-items: center;
+    position: relative;
 }
 
 .icons > div {
-    color: white;
-    font-size: 1.5rem;
+    color: #6B7280;
+    font-size: 1.3rem;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 50%;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons > div:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #8B5CF6;
+    background: rgba(139, 92, 246, 0.1);
     transform: scale(1.1);
 }
 
-/* Account box styling */
+/* Account Box Styles */
 .account-box {
     position: absolute;
-    top: 100%;
-    right: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
-    min-width: 250px;
+    top: 120%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2);
+    min-width: 300px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    z-index: 1001;
 }
 
 .account-box.active {
@@ -137,102 +187,190 @@
 }
 
 .account-box p {
-    margin: 0.5rem 0;
-    color: #333;
-    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #6B7280;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .account-box p span {
-    font-weight: bold;
-    color: #667eea;
+    color: #8B5CF6;
+    font-weight: 600;
 }
 
-.delete-btn {
+.account-box .delete-btn {
     display: inline-block;
-    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    background: linear-gradient(135deg, #EF4444, #DC2626);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
     text-decoration: none;
+    font-weight: 600;
     margin: 1rem 0;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     font-size: 0.9rem;
 }
 
-.delete-btn:hover {
+.account-box .delete-btn:hover {
+    background: linear-gradient(135deg, #DC2626, #B91C1C);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
 }
 
 .account-box div {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
+    color: #6B7280;
+    font-size: 0.9rem;
 }
 
-.account-box a {
-    color: #667eea;
+.account-box div a {
+    color: #8B5CF6;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.account-box a:hover {
-    text-decoration: underline;
+.account-box div a:hover {
+    color: #A78BFA;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .header .flex {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .navbar {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
-    
-    .navbar a {
-        text-align: center;
-        padding: 0.75rem;
-    }
-    
-    .icons {
-        order: -1;
-    }
-    
-    .account-box {
-        position: static;
-        margin-top: 1rem;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-    }
-}
-
-/* Menu toggle for mobile */
+/* Mobile Menu Toggle */
 #menu-btn {
     display: none;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    #menu-btn {
-        display: block;
+    .header .flex {
+        padding: 0 1rem;
     }
     
     .navbar {
-        display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background: rgba(102, 126, 234, 0.95);
-        backdrop-filter: blur(10px);
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(139, 92, 246, 0.1);
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+        flex-direction: column;
+        gap: 0;
         padding: 1rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
     }
     
     .navbar.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .navbar a {
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+    
+    #menu-btn {
         display: flex;
+    }
+    
+    .account-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 280px;
+        max-width: 90vw;
+    }
+    
+    .account-box.active {
+        transform: translate(-50%, -50%);
+    }
+    
+    .message {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        font-size: 1.5rem;
+    }
+    
+    .icons > div {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+    
+    .account-box {
+        padding: 1.5rem;
+    }
+}
+
+/* JavaScript interaction styles */
+body.menu-active {
+    overflow: hidden;
+}
+
+body.menu-active .navbar {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Additional Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    animation: fadeInDown 0.6s ease;
+}
+
+/* Overlay for mobile menu */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .overlay.active {
+        display: block;
     }
 }
