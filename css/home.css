@@ -4,7 +4,7 @@
 .home {
   min-height: 80vh;
   background: linear-gradient(rgba(59, 34, 59, 0.389), rgba(61, 14, 69, 0.858)),
-    url(../images/home_image.png) no-repeat;
+    url("../images/home_image.png") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;

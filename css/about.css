@@ -1,303 +1,262 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-}
-
-/* Navigation/Header Styles */
-.heading {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
-    color: white;
-    text-align: center;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
-}
-
-.heading h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.heading p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-.heading a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.heading a:hover {
-    color: #ecf0f1;
-}
+@import url(./global.css);
 
 /* About Section */
 .about {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    margin-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .about .flex {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .about .image {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .about .image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(142, 68, 173, 0.2);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(142, 68, 173, 0.2);
 }
 
 .about .content {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .about .content h3 {
-    font-size: 2rem;
-    color: #8e44ad;
-    margin-bottom: 1.5rem;
-    text-transform: capitalize;
+  font-size: 2rem;
+  color: #8e44ad;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
 }
 
 .about .content p {
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem;
-    color: #555;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
 .btn {
-    display: inline-block;
-    background: #8e44ad;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  display: inline-block;
+  background: #8e44ad;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn:hover {
-    background: #7d3c98;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
+  background: #7d3c98;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
 }
 
 /* Section Titles */
 .title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #8e44ad;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #8e44ad;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
 }
 
 .title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background: #8e44ad;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #8e44ad;
 }
 
 /* Reviews Section */
 .reviews {
-    background: white;
-    padding: 4rem 0;
-    margin-bottom: 4rem;
+  background: white;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
 }
 
 .reviews .box-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
 }
 
 .reviews .box {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .reviews .box:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .reviews .box img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #8e44ad;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #8e44ad;
 }
 
 .reviews .box p {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 1rem;
-    font-style: italic;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .reviews .box .stars {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .reviews .box .stars i {
-    color: #f39c12;
-    font-size: 1.2rem;
-    margin: 0 2px;
+  color: #f39c12;
+  font-size: 1.2rem;
+  margin: 0 2px;
 }
 
 .reviews .box h3 {
-    color: #8e44ad;
-    font-size: 1.3rem;
-    text-transform: capitalize;
+  color: #8e44ad;
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 /* Authors Section */
 .authors {
-    padding: 4rem 0;
-    background: #f8f9fa;
+  padding: 4rem 0;
+  background: #f8f9fa;
 }
 
 .authors .box-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
 }
 
 .authors .box {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  margin-top: 20px;
 }
 
 .authors .box:hover {
-    transform: translateY(-5px);
-    border: 2px solid #8e44ad;
+  transform: translateY(-5px);
+  border: 2px solid #8e44ad;
 }
 
 .authors .box img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #8e44ad;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #8e44ad;
 }
 
 .authors .box .share {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .authors .box .share a {
-    font-size: 1.5rem;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background: white;
-    color: #8e44ad;
-    margin: 0 5px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid #8e44ad;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: white;
+  color: #8e44ad;
+  margin: 0 5px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #8e44ad;
 }
 
 .authors .box .share a:hover {
-    background: #7d3c98;
-    transform: scale(1.1);
-    color: white;
+  background: #7d3c98;
+  transform: scale(1.1);
+  color: white;
 }
 
 .authors .box h3 {
-    color: #8e44ad;
-    font-size: 1.3rem;
-    text-transform: capitalize;
+  color: #8e44ad;
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .heading h3 {
-        font-size: 2rem;
-    }
-    
-    .about .flex {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about .content h3 {
-        font-size: 1.5rem;
-    }
-    
-    .title {
-        font-size: 2rem;
-    }
-    
-    .reviews .box-container,
-    .authors .box-container {
-        grid-template-columns: 1fr;
-    }
+  .heading h3 {
+    font-size: 2rem;
+  }
+
+  .about .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .reviews .box-container,
+  .authors .box-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
-    .heading {
-        padding: 2rem 0;
-    }
-    
-    .heading h3 {
-        font-size: 1.5rem;
-    }
-    
-    .about,
-    .reviews .box-container,
-    .authors .box-container {
-        padding: 0 1rem;
-    }
-    
-    .title {
-        font-size: 1.5rem;
-    }
+  .heading {
+    padding: 2rem 0;
+  }
+
+  .heading h3 {
+    font-size: 1.5rem;
+  }
+
+  .about,
+  .reviews .box-container,
+  .authors .box-container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
 }
