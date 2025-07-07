@@ -42,7 +42,6 @@ if(isset($_POST['add_to_cart'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-
    <link rel="stylesheet" href="css/home.css">
 
 </head>
