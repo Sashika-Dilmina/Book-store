@@ -153,7 +153,6 @@ if(!isset($user_id)){
          <img src="images/author-1.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
@@ -164,7 +163,6 @@ if(!isset($user_id)){
          <img src="images/author-2.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
@@ -175,7 +173,6 @@ if(!isset($user_id)){
          <img src="images/author-3.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
@@ -186,7 +183,6 @@ if(!isset($user_id)){
          <img src="images/author-4.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
@@ -197,7 +193,6 @@ if(!isset($user_id)){
          <img src="images/author-5.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
@@ -208,7 +203,6 @@ if(!isset($user_id)){
          <img src="images/author-6.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>

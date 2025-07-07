@@ -215,11 +215,12 @@ body {
 
 .authors .box:hover {
     transform: translateY(-5px);
+    border: 2px solid #8e44ad;
 }
 
 .authors .box img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
     border: 3px solid #8e44ad;
@@ -234,17 +235,19 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #8e44ad;
-    color: white;
+    background: white;
+    color: #8e44ad;
     margin: 0 5px;
     border-radius: 50%;
     text-decoration: none;
     transition: all 0.3s ease;
+    border: 2px solid #8e44ad;
 }
 
 .authors .box .share a:hover {
     background: #7d3c98;
     transform: scale(1.1);
+    color: white;
 }
 
 .authors .box h3 {
