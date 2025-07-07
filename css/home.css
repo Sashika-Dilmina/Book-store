@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+  --purple: #8e44ad;
+  --red: #c0392b;
+  --orange: #f39c12;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-white: #ccc;
+  --light-bg: #f5f5f5;
+  --border: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--purple);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.empty {
+  padding: 1.5rem;
+  text-align: center;
+  border: var(--border);
+  background-color: var(--white);
+  color: var(--red);
+  font-size: 2rem;
+}
+
+.message {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: var(--white);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  gap: 1.5rem;
+}
+
+.message span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.message i {
+  cursor: pointer;
+  color: var(--red);
+  font-size: 2.5rem;
+}
+
+.message i:hover {
+  transform: rotate(90deg);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.btn,
+.delete-btn,
+.white-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+
+.btn:hover,
+.delete-btn:hover {
+  background-color: var(--black);
+}
+
+.white-btn,
+.btn {
+  background-color: var(--purple);
+}
+
+.option-btn {
+  border: 1px solid #8e44ad;
+  background: transparent;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: #8e44ad;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+
+.delete-btn {
+  background-color: var(--red);
+}
+
+.white-btn:hover {
+  background-color: #dbbae9;
+  color: var(--black);
+}
+/* this should be in all css */
+.heading {
+  min-height: 30vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(rgba(128, 0, 128, 0.266), rgba(128, 0, 128, 0.5)),
+    url(../images/heading.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+}
+
+.heading h3 {
+  font-size: 5rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.heading p {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.heading p a {
+  color: var(--white);
+}
+
+.heading p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0.2s;
+  }
+}
+
+/* this is header section */
+.header .header-1 {
+  background-color: var(--light-bg);
+}
+
+.header .header-1 .flex {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .header-2 {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .header-2 .flex {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .header-1 .flex .share a {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--light-color);
+}
+
+.header .header-1 .flex .share a:hover {
+  color: var(--purple);
+}
+
+.header .header-1 .flex p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.header .header-1 .flex p a {
+  color: var(--purple);
+}
+
+.header .header-1 .flex p a:hover {
+  text-decoration: underline;
+}
+
+.header .header-2 .flex .logo {
+  font-size: 2.8rem;
+  color: var(--purple);
+  font-weight: 800;
+}
+
+.header .header-2 .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+
+.header .header-2 .flex .navbar a:hover {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.header .header-2 .flex .icons > * {
+  font-size: 1.8rem;
+  color: var(--light-color);
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+.header .header-2 .flex .icons > *:hover {
+  color: var(--purple);
+}
+
+header .header-2 .flex .logo span {
+  color: #580891;
+}
+#menu-btn {
+  display: none;
+}
+
+.header .header-2 .flex .user-box {
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+  width: 30rem;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.header .header-2 .flex .user-box.active {
+  display: inline-block;
+}
+
+.header .header-2 .flex .user-box p {
+  font-size: 2rem;
+  color: var(--light-color);
+  margin-bottom: 1.5rem;
+}
+
+.header .header-2 .flex .user-box p span {
+  color: var(--purple);
+}
+
+.header .header-2 .flex .user-box .delete-btn {
+  margin-top: 0;
+}
+/* this is home section */
+.home {
+  min-height: 80vh;
+  background: linear-gradient(rgba(59, 34, 59, 0.389), rgba(61, 14, 69, 0.858)),
+    url(../images/home_image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content {
+  text-align: center;
+  width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 5.8rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+.home .content h3 span {
+  color: #baa8c8;
+}
+.home .content p {
+  font-size: 1.8rem;
+  color: var(--light-white);
+  padding: 1.2rem 0;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+.home .content .white-btn {
+  padding: 20px 45px;
+  margin-top: 25px;
+}
+.home .content .white-btn span {
+  margin-left: 15px;
+}
+
+.products .title {
+  font-size: 25px;
+  font-weight: 800;
+  align-items: start;
+}
+
+.products .box-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.products .book-card {
+  background: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 0 1rem 1.5rem 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.products .book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.book-title {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.book-author {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.book-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: auto;
+  gap: 1rem;
+}
+
+.book-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.book-btn {
+  background-color: var(--purple);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #4b0082;
+}
+
+.about-alt {
+  background-color: #a96ac541;
+  padding: 6rem 2rem;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h3 {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.about-btn {
+  display: inline-block;
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #be73de;
+}
+
+.about-image {
+  flex: 1 1 500px;
+}
+
+.about-image img {
+  width: 100%;
+  opacity: 0.7;
+  object-fit: cover;
+}
+.home-contact {
+  height: 50vh;
+}
+.home-contact .content {
+  max-width: 60rem;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.home-contact .content h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.home-contact .content p {
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: gray;
+  font-size: 1.7rem;
+}
+/* this is footer section */
+.footer {
+  background-color: var(--light-bg);
+}
+
+.footer .box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer .box-container .box p,
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p i,
+.footer .box-container .box a i {
+  color: var(--purple);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--light-color);
+  border-top: var(--border);
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.footer .credit span {
+  color: var(--purple);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .header-2 .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .header-2 .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .header-2 .flex .navbar a {
+    display: block;
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading h3 {
+    font-size: 3.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
