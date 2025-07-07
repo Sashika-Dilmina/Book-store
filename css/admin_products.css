@@ -3,23 +3,32 @@
 
 /* Root Variables */
 :root {
-    --primary-color: #8B4513;
-    --secondary-color: #D2691E;
-    --accent-color: #CD853F;
-    --dark-brown: #5D4037;
-    --light-cream: #FFF8DC;
-    --off-white: #FAF7F0;
-    --gold: #DAA520;
-    --dark-gold: #B8860B;
-    --shadow: rgba(139, 69, 19, 0.2);
-    --light-shadow: rgba(139, 69, 19, 0.1);
-    --text-dark: #3E2723;
-    --text-light: #6D4C41;
-    --danger: #C62828;
-    --success: #388E3C;
+    --primary-color: #8e44ad; 
+
+    /* Harmonized Colors */
+    --secondary-color: #732d91;   
+    --accent-color: #bb8fc9;      
+    --dark-brown: #4b2c5e;        
+    --light-cream: #f3e6f9;       
+    --off-white: #f9f5fb;         
+    --purple: #8e44ad;;      
+    --dark-purple: #4b2c5e;         
+    
+    /* Shadows & Text */
+    --shadow: rgba(142, 68, 173, 0.2);      /* Primary color in shadow */
+    --light-shadow: rgba(142, 68, 173, 0.1);
+    --text-dark: #2e1435;         /* Deep plum text */
+    --text-light: #7e5a99;        /* Muted lavender-grey */
+    
+    /* Alerts */
+    --danger: #c0392b;            /* Still red for clarity */
+    --success: #27ae60;           /* Green for universal UX meaning */
+    
+    /* General UI */
     --border-radius: 8px;
     --transition: all 0.3s ease;
 }
+
 
 /* Global Styles */
 * {
@@ -72,7 +81,7 @@ h1, h2, h3 {
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+    background: linear-gradient(90deg, var(--purple), var(--dark-purple));
     border-radius: 2px;
 }
 
@@ -172,7 +181,7 @@ h1, h2, h3 {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+    background: linear-gradient(90deg, var(--purple), var(--dark-purple));
 }
 
 .show-products .box:hover {
@@ -225,14 +234,14 @@ h1, h2, h3 {
 }
 
 .show-products .option-btn {
-    background: var(--gold);
+    background: var(--purple);
     color: white;
-    border-color: var(--gold);
+    border-color: var(--purple);
 }
 
 .show-products .option-btn:hover {
-    background: var(--dark-gold);
-    border-color: var(--dark-gold);
+    background: var(--dark-purple);
+    border-color: var(--dark-purple);
     transform: translateY(-2px);
 }
 
@@ -464,5 +473,5 @@ h1, h2, h3 {
 
 .vintage-border {
     border: 2px solid var(--accent-color);
-    border-image: linear-gradient(45deg, var(--gold), var(--dark-gold)) 1;
+    border-image: linear-gradient(45deg, var(--purple), var(--dark-purple)) 1;
 }
