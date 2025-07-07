@@ -149,8 +149,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background: linear-gradient(rgba(128, 0, 128, 0.266), rgba(128, 0, 128, 0.5)),
-    url("images/heading.jpg") no-repeat;
+  background: url("images/heading.jpg") no-repeat;
     /*heading background img*/
   background-size: cover;
   background-position: center;
