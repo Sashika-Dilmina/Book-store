@@ -85,7 +85,7 @@ background-color: transparent;
 .contact form .btn {
   width: 100%;
   padding: 12px;
-  background-color: #15b23a;
+  background-color: #c247b5;
   color: white;
   border: none;
   font-size: 16px;
@@ -95,7 +95,7 @@ background-color: transparent;
 }
 
 .contact form .btn:hover {
-  background-color: #218838;
+  background-color: #ea9dda;
 }
 
 /* Footer (optional base style) */
