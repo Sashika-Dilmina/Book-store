@@ -1,3 +1,7 @@
+
+<link rel = "stylesheet" href="css/header.css">
+
+
 <?php
 if(isset($message)){
    foreach($message as $message){
