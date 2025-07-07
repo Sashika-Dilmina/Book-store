@@ -1,6 +1,5 @@
 
-
-
+<link rel = "stylesheet" href="css/footer.css">
 
 <section class="footer">
 
