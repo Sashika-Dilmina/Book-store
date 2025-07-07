@@ -1,0 +1,109 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+  
+
+
+body {
+  background-color: #37064c;
+  color: #381e1e;
+ 
+}
+
+/* Header style */
+.heading {
+  background-color: #101010;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+.heading h3 {
+  font-size: 28px;
+}
+
+.heading p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.heading a {
+  color: #635004;
+  text-decoration: none;
+}
+
+.heading a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section   big  form  */
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #9e9c9e;
+}
+
+.contact form {
+
+
+background-color: transparent;
+  color: rgb(195, 226, 19); /* Optional: for visibility */
+
+
+  width: 100%;
+  max-width: 500px;
+  background: #51164a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f8f5f5;
+  text-align: center;
+}
+
+.contact form .box,
+.contact form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact form .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #c247b5;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact form .btn:hover {
+  background-color: #ea9dda;
+}
+
+/* Footer (optional base style) */
+footer {
+  background: #1f1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
