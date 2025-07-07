@@ -1,43 +1,4 @@
-/* Reset & base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #37064c; /* Deep purple background */
-  color: #f3e8ff; /* Soft lavender text */
-  line-height: 1.6;
-}
-
-a {
-  color: #c084fc; /* Light purple link */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #e0b3ff;
-}
-
-/* Header section */
-.heading {
-  background-color: rgba(111, 45, 168, 0.6); /* Translucent purple */
-  text-align: center;
-  padding: 30px 20px;
-  color: #fdf4ff; /* Light text */
-}
-
-.heading h3 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.heading p {
-  font-size: 14px;
-}
+@import url(./global.css);
 
 /* Search form */
 .search-form {

@@ -1,3 +1,6 @@
+@import url(./global.css);
+
+
 /* this is footer section */
 .footer {
   background-color: var(--light-bg);
