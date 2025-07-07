@@ -106,6 +106,8 @@ body {
     box-shadow: 
         0 12px 35px rgba(139, 69, 19, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    border: 2px solid #8e44ad;
 }
 
 /* Different book-themed colors and icons for each box */
