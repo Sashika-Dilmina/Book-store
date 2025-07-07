@@ -251,7 +251,7 @@ form h3::after {
 .btn {
     width: 100%;
     padding: 15px;
-   background: linear-gradient(135deg, #9c27b0, #673ab7, #3f51b5);
+   background: #8e44ad;
     color: white;
     border: none;
     border-radius: 12px;
@@ -267,8 +267,8 @@ form h3::after {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
-    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    box-shadow: 0 15px 35px #8e44ad;
+    background: #8e44ad;
 }
 
 .btn:active {

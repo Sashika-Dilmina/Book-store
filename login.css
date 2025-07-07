@@ -263,7 +263,7 @@ form h3::after {
 .btn {
     width: 100%;
     padding: 18px;
-    background: linear-gradient(135deg, #9c27b0, #673ab7, #3f51b5);
+    background: #8e44ad;
     color: white;
     border: none;
     border-radius: 15px;
@@ -277,7 +277,7 @@ form h3::after {
     font-family: 'Poppins', sans-serif;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(210, 80, 233, 0.3);
+    box-shadow: 0 8px 25px #8e44ad;
 }
 
 .btn::before {
@@ -293,8 +293,8 @@ form h3::after {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(180, 70, 199, 0.4);
-    background: linear-gradient(135deg, #ab47bc, #8962cc, #5c6bc0);
+    box-shadow: 0 15px 35px #8e44ad;
+    background: #8e44ad;
 }
 
 .btn:hover::before {
