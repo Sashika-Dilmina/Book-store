@@ -30,7 +30,9 @@ if(isset($message)){
    </div>
 
    <div class="header-2">
-      <div class="flex"><a href="home.php" class="logo"><span>PAGET</span>urner</a>
+      <div class="flex">
+         <a href="home.php" class="logo"> 
+         <h2>PAGETuner</h2>
 
        
          <nav class="navbar">
