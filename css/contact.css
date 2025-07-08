@@ -1,44 +1,4 @@
-/* Reset and base styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-  
-
-
-body {
-  background-color: #37064c;
-  color: #381e1e;
- 
-}
-
-/* Header style */
-.heading {
-  background-color: #101010;
-  color: #fff;
-  text-align: center;
-  padding: 25px;
-}
-
-.heading h3 {
-  font-size: 28px;
-}
-
-.heading p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.heading a {
-  color: #635004;
-  text-decoration: none;
-}
-
-.heading a:hover {
-  text-decoration: underline;
-}
+@import url(./global.css);
 
 /* Contact Section   big  form  */
 .contact {
