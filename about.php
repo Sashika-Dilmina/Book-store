@@ -146,95 +146,197 @@ if(!isset($user_id)){
 </section>
 
 <section class="authors">
-
-   <h1 class="title">Greate authors</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="images/author-1.jpg" alt="author1">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+   <div class="container">
+      <h1 class="section-title">Great Authors</h1>
+      <div class="authors-grid">
+         
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-1.jpg" alt="William Shakespeare">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">William Shakespeare</h3>
+               <p class="author-bio">English playwright and poet, widely regarded as the greatest writer in the English language.</p>
+            </div>
          </div>
-         <h3>William Shakespeare</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author-2.jpg" alt="author2">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-2.jpg" alt="Jane Austen">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Jane Austen</h3>
+               <p class="author-bio">English novelist known for her wit, social commentary, and timeless romantic stories.</p>
+            </div>
          </div>
-         <h3>Jane Austen</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author-3.jpg" alt="author3">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-3.jpg" alt="Charles Dickens">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Charles Dickens</h3>
+               <p class="author-bio">Victorian author famous for his vivid characters and depictions of social issues.</p>
+            </div>
          </div>
-         <h3>Charles Dickens</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author-4.jpg" alt="author4">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-4.jpg" alt="Leo Tolstoy">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Leo Tolstoy</h3>
+               <p class="author-bio">Russian writer regarded as one of the greatest authors of all time.</p>
+            </div>
          </div>
-         <h3>Leo Tolstoy</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author-5.jpg" alt="author5">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-5.jpg" alt="Napoleon Hill">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Napoleon Hill</h3>
+               <p class="author-bio">American self-help author, best known for "Think and Grow Rich".</p>
+            </div>
          </div>
-         <h3>Napoleon Hill</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author-6.jpg" alt="author6">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-6.jpg" alt="Maya Angelou">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Maya Angelou</h3>
+               <p class="author-bio">American poet, memoirist, and civil rights activist known for her powerful voice.</p>
+            </div>
          </div>
-         <h3>Maya Angelou</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author6.jpg" alt="author7">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-7.jpeg" alt="Peter Drucker">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Peter Drucker</h3>
+               <p class="author-bio">Austrian-American management consultant and author, known as the "father of modern management".</p>
+            </div>
          </div>
-         <h3>Peter Drucker</h3>
-      </div>
 
-      <div class="box">
-         <img src="images/author9.jpg" alt="author8">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+         <div class="author-card">
+            <div class="author-image">
+               <img src="images/author-8.jpg" alt="Virginia Woolf">
+               <div class="social-overlay">
+                  <div class="social-links">
+                     <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="author-info">
+               <h3 class="author-name">Virginia Woolf</h3>
+               <p class="author-bio">English writer and modernist pioneer, known for her innovative narrative techniques.</p>
+            </div>
          </div>
-         <h3>Virginia Woolf</h3>
-      </div>
 
+      </div>
    </div>
-
 </section>
-
 
 
 
