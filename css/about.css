@@ -47,7 +47,7 @@
 
 .btn {
   display: inline-block;
-  background: #8e44ad;
+  background: #6d6172 !important;
   color: white;
   padding: 12px 30px;
   text-decoration: none;
@@ -59,7 +59,7 @@
 }
 
 .btn:hover {
-  background: #7d3c98;
+  background: #8e44ad !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
 }
@@ -127,7 +127,7 @@
   font-size: 1.5rem;
   color: #555;
   margin-bottom: 1rem;
-  font-style: italic;
+  
 }
 
 .reviews .box .stars {
@@ -357,9 +357,9 @@
 }
 
 .author-bio {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #666;
+  font-size: 1.2rem;
+  
+  color: #080606;
   line-height: 1.5;
   margin: 0;
   opacity: 0.8;
