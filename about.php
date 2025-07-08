@@ -306,7 +306,7 @@ if(!isset($user_id)){
                </div>
             </div>
             <div class="author-info">
-               <h3 class="author-name">Peter Drucker</h3>
+               <h3 class="author-name">Virginia Woolf</h3>
                <p class="author-bio">Austrian-American management consultant and author, known as the "father of modern management".</p>
             </div>
          </div>
@@ -329,7 +329,7 @@ if(!isset($user_id)){
                </div>
             </div>
             <div class="author-info">
-               <h3 class="author-name">Virginia Woolf</h3>
+               <h3 class="author-name">Peter Drucker</h3>
                <p class="author-bio">English writer and modernist pioneer, known for her innovative narrative techniques.</p>
             </div>
          </div>
