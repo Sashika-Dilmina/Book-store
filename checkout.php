@@ -72,7 +72,7 @@ if(isset($_POST['order_btn'])){
 
 <div class="heading">
    <h3>checkout</h3>
-   <p> <a href="home.php">home</a> / checkout </p>
+   <p> <a href="home.php">Home</a> / Checkout </p>
 </div>
 
 <section class="display-order">
