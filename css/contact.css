@@ -9,11 +9,8 @@
 }
 
 .contact form {
-
-
-background-color: transparent;
+  background-color: transparent;
   color: rgb(195, 226, 19); /* Optional: for visibility */
-
 
   width: 100%;
   max-width: 500px;
@@ -65,5 +62,5 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 40px;
-  font-size: 14px;
+  font-size: 14px;
 }
