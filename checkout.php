@@ -63,7 +63,7 @@ if(isset($_POST['order_btn'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/checkout.css">
 
 </head>
 <body>
@@ -92,26 +92,26 @@ if(isset($_POST['order_btn'])){
       echo '<p class="empty">your cart is empty</p>';
    }
    ?>
-   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total"> Grand Total : <span>$<?php echo $grand_total; ?>/-</span> </div>
 
 </section>
 
 <section class="checkout">
 
    <form action="" method="post">
-      <h3>place your order</h3>
+      <h3>Place your order</h3>
       <div class="flex">
          <div class="inputBox">
             <span>your name :</span>
-            <input type="text" name="name" required placeholder="enter your name">
+            <input type="text" name="name" required placeholder="Enter your name">
          </div>
          <div class="inputBox">
             <span>your number :</span>
-            <input type="number" name="number" required placeholder="enter your number">
+            <input type="number" name="number" required placeholder="Enter your number">
          </div>
          <div class="inputBox">
             <span>your email :</span>
-            <input type="email" name="email" required placeholder="enter your email">
+            <input type="email" name="email" required placeholder="Enter your email">
          </div>
          <div class="inputBox">
             <span>payment method :</span>
@@ -122,35 +122,37 @@ if(isset($_POST['order_btn'])){
                <option value="paytm">paytm</option>
             </select>
          </div>
+         
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
+            <span>Address:</span>
+            <input type="text" name="street" required placeholder="Your address">
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="street" required placeholder="e.g. street name">
+            <span>City:</span>
+            <input type="text" name="city" required placeholder="Your city">
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" required placeholder="e.g. mumbai">
+            <span>State:</span>
+            <input type="text" name="state" required placeholder="Your state">
          </div>
          <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" required placeholder="e.g. maharashtra">
+            <span>Country:</span>
+            <input type="text" name="country" required placeholder="Your country">
          </div>
          <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" required placeholder="e.g. india">
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+            <span>Pin Code:</span>
+            <input class="Box" type="number" min="0" name="pin_code" required placeholder="123456">
          </div>
       </div>
-      <input type="submit" value="order now" class="btn" name="order_btn">
+      <div>
+       <button type="submit" class="btn">Order Now</button>
+      </div>
+</div>
    </form>
 
 </section>
+
+
 
 
 
