@@ -19,7 +19,7 @@
   box-shadow: var(--box-shadow);
 }
 
-.header .header-2.active {
+.header .header-2 .active {
   position: fixed;
   top: 0;
   left: 0;
@@ -90,17 +90,17 @@
 
 header .header-2 .flex h2 {
   font-size: 36px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    background: linear-gradient(135deg, #9c27b0, #673ab7, #ce40c9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 8px;
-    animation: glow 3s ease-in-out infinite alternate;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #9c27b0, #673ab7, #ce40c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  animation: glow 3s ease-in-out infinite alternate;
 }
 #menu-btn {
   display: none;

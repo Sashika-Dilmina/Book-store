@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   padding: 30px 20px;
-  background: #9e9c9e;
+  background: #fbfbfb;
 }
 
 .contact form {
@@ -14,17 +14,19 @@
 
   width: 100%;
   max-width: 500px;
-  background: #5c3e59;
+  background: #b7b4b62f;
   padding: 25px;
+
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(102, 30, 113, 0.395);
 }
 
 .contact form h3 {
   font-size: 22px;
   margin-bottom: 20px;
-  color: #f8f5f5;
+  color: #8e44ad;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .contact form .box,
@@ -42,7 +44,7 @@
 .contact form .btn {
   width: 100%;
   padding: 12px;
-  background-color: #d928c8;
+  background-color: #8e44ad;
   color: white;
   border: none;
   font-size: 16px;
@@ -52,7 +54,7 @@
 }
 
 .contact form .btn:hover {
-  background-color: #ea9dda;
+  background-color: #542d65dc;
 }
 
 /* Footer (optional base style) */
