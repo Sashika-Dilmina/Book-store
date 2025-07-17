@@ -66,7 +66,7 @@ if (!isset($user_id)) {
                <input type="text" name="name" required placeholder="Enter your name">
             </div>
             <div class="inputBox">
-               <span>your number :</span>
+               <span>Contact Number :</span> 
                <input type="number" name="number" required placeholder="Enter your number">
             </div>
             <div class="inputBox">
