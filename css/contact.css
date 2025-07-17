@@ -14,7 +14,7 @@
 
   width: 100%;
   max-width: 500px;
-  background: #51164a;
+  background: #5c3e59;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@
 .contact form .btn {
   width: 100%;
   padding: 12px;
-  background-color: #c247b5;
+  background-color: #d928c8;
   color: white;
   border: none;
   font-size: 16px;
