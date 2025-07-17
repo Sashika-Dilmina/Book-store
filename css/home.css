@@ -135,6 +135,7 @@
   border-radius: 0.4rem;
   cursor: pointer;
   font-size: 1.4rem;
+  transition: background 0.3s;
   white-space: nowrap;
 }
 
