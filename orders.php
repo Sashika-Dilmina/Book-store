@@ -24,7 +24,7 @@ if(!isset($user_id)){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="order.css">
 
 </head>
 <body>
@@ -33,7 +33,7 @@ if(!isset($user_id)){
 
 <div class="heading">
    <h3>your orders</h3>
-   <p> <a href="home.php">home</a> / orders </p>
+   <p> <a href="home.php">Home</a> / Orders </p>
 </div>
 
 <section class="placed-orders">

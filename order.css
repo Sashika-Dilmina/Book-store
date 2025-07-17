@@ -1,0 +1,165 @@
+@import url(./global.css);
+.placed-orders {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.placed-orders .title {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.placed-orders .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.placed-orders .box {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border: 1px solid #e0e6ff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 900px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.placed-orders .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.placed-orders .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.08) 0%,
+    rgba(118, 75, 162, 0.04) 100%
+  );
+  border-radius: 50%;
+  transform: translate(40px, -40px);
+}
+
+.placed-orders .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.placed-orders .box p {
+  margin: 6px 0;
+  font-size: 18px;
+  color: #2d3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.08);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.placed-orders .box p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.placed-orders .box p span {
+  font-weight: 600;
+  color: #1a202c;
+  margin-left: 5px;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+/* Label styling for better readability */
+.placed-orders .box p {
+  text-transform: capitalize;
+}
+
+.placed-orders .box p span {
+  text-transform: none;
+}
+
+/* Add subtle animation on load */
+.placed-orders .box {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .placed-orders {
+    padding: 15px;
+  }
+
+  .placed-orders .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .placed-orders .box {
+    width: 100%;
+    max-width: 900px;
+    padding: 25px 30px;
+  }
+
+  .placed-orders .box p {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+  .placed-orders .box p span {
+    font-size: 15px;
+    min-width: 200px;
+  }
+
+  .placed-orders .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* Enhanced styling for better visual hierarchy */
+.placed-orders .box p:first-child {
+  font-weight: 600;
+  color: #667eea;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.placed-orders .box p:first-child span {
+  color: #667eea;
+  font-weight: 700;
+}
