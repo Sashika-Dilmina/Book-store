@@ -20,10 +20,10 @@ if(isset($message)){
    <div class="header-1">
       <div class="flex">
          <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="https://x.com/?lang=en" class="fab fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://lk.linkedin.com/" class="fab fa-linkedin" target="_blank"></a>
          </div>
          <p> New here?   <a href="login.php"> Login</a> | <a href="register.php">Register</a> </p>
       </div>

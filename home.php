@@ -94,10 +94,10 @@ if(isset($_POST['add_to_cart'])){
       }
       ?>
    </div>
+<div class="load-more" style="margin-top: 2rem; text-align:center">
+   <a href="shop.php" >View All</a>
+</div>
 
-   <div class="load-more" style="margin-top: 2rem; text-align:center">
-      <a href="shop.php" class="option-btn">view All</a>
-   </div>
 
 </section>
 
