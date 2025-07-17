@@ -63,15 +63,15 @@ if (!isset($user_id)) {
          <div class="flex">
             <div class="inputBox">
                <span>your name :</span>
-               <input type="text" name="name" required>
+               <input type="text" name="name" required placeholder="Enter your name">
             </div>
             <div class="inputBox">
-               <span>your number :</span>
-               <input type="number" name="number" required>
+               <span>Contact Number :</span> 
+               <input type="number" name="number" required placeholder="Enter your number">
             </div>
             <div class="inputBox">
                <span>your email :</span>
-               <input type="email" name="email" required>
+               <input type="email" name="email" required placeholder="Enter your email">
             </div>
             <div class="inputBox">
                <span>payment method :</span>
@@ -83,28 +83,25 @@ if (!isset($user_id)) {
                </select>
             </div>
             <div class="inputBox">
-               <span>Flat no:</span>
-               <input type="text" name="flat" required>
+               <span>Address:</span>
+               <input type="text" name="Address" required placeholder="Your address">
             </div>
-            <div class="inputBox">
-               <span>Street:</span>
-               <input type="text" name="street" required>
-            </div>
+            
             <div class="inputBox">
                <span>City:</span>
-               <input type="text" name="city" required>
+               <input type="text" name="city" required placeholder="Your city">
             </div>
             <div class="inputBox">
                <span>State:</span>
-               <input type="text" name="state" required>
+               <input type="text" name="state" required placeholder="Your state">
             </div>
             <div class="inputBox">
                <span>Country:</span>
-               <input type="text" name="country" required>
+               <input type="text" name="country" required placeholder="Your country">
             </div>
             <div class="inputBox">
                <span>Pin Code:</span>
-               <input type="number" name="pin_code" required>
+               <input type="number" name="pin_code" required placeholder="12345">
             </div>
          </div>
          <button type="submit" class="btn" name="order_btn">Order Now</button>
