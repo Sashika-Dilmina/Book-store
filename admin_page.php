@@ -131,13 +131,6 @@ if(!isset($admin_id)){
 <!-- admin dashboard section ends -->
 
 
-
-
-
-
-
-
-
 <!-- custom admin js file link  -->
 <script src="js/admin_script.js"></script>
 
