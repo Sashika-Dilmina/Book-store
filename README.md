@@ -26,11 +26,6 @@ PageTurner is a user-friendly and fully functional online book store built using
 - **Database**: MySQL  
 - **Server**: Apache (XAMPP/WAMP recommended)
 
----
-
-## 📸 Screenshots
-
-> *Screenshots coming soon! Add screenshots of your UI to make your repo more visual.*
 
 ---
 
@@ -66,7 +61,4 @@ Run the Project
 
 Open your browser and go to:
 
-arduino
-Copy
-Edit
 http://localhost/pageturner-bookstore/
